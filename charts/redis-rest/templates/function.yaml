@@ -1,10 +1,10 @@
 apiVersion: serverless.kyma-project.io/v1alpha2
 kind: Function
 metadata:
-    name: {{ Charts.Name }}
+    name: {{ Chart.Name }}
     labels:
-        app.kubernetes.io/name: {{ Charts.Name }}
-        app.kubernetes.io/part-of: {{ Charts.Name }}
+        app.kubernetes.io/name: {{ Chart.Name }}
+        app.kubernetes.io/part-of: {{ Chart.Name }}
         app.kubernetes.io/managed-by: Helm
         app.kubernetes.io/version: {{ .Chart.AppVersion }}
 spec:
