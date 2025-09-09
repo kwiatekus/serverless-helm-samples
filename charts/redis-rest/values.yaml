@@ -1,0 +1,7 @@
+resourceConfiguration:
+  function:
+    profile: S
+  build:
+    profile: slow
+git:
+  reference: main

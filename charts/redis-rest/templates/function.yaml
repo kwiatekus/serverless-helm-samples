@@ -1,0 +1,16 @@
+apiVersion: serverless.kyma-project.io/v1alpha2
+kind: Function
+metadata:
+    name: redis-rest
+spec:
+    runtime: nodejs22
+    source:
+        gitRepository:
+            baseDir: /src/nodejs-redis-rest
+            reference: {{ .Values.git.reference }}
+            url: https://github.com/kwiatekus/serverless-helm-samples.git
+    resourceConfiguration:
+        function:
+            profile: {{ .Values.resourceConfiguration.function.profile }}
+        build:
+            profile: {{ .Values.resourceConfiguration.build.profile }}
