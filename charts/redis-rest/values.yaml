@@ -5,3 +5,4 @@ resourceConfiguration:
     profile: slow
 git:
   reference: main
+runtime: nodejs22

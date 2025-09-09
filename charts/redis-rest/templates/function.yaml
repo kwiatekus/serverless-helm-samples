@@ -1,9 +1,14 @@
 apiVersion: serverless.kyma-project.io/v1alpha2
 kind: Function
 metadata:
-    name: redis-rest
+    name: {{ Charts.Name }}
+    labels:
+        app.kubernetes.io/name: {{ Charts.Name }}
+        app.kubernetes.io/part-of: {{ Charts.Name }}
+        app.kubernetes.io/managed-by: Helm
+        app.kubernetes.io/version: {{ .Chart.AppVersion }}
 spec:
-    runtime: nodejs22
+    runtime: {{ .Values.runtime }}
     source:
         gitRepository:
             baseDir: /src/nodejs-redis-rest

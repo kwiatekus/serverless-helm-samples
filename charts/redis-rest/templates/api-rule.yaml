@@ -1,0 +1,25 @@
+apiVersion: gateway.kyma-project.io/v2
+kind: APIRule
+metadata:
+  labels:
+    app.kubernetes.io/name: {{ Charts.Name }}
+    app.kubernetes.io/part-of: {{ Charts.Name }}
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/version: {{ .Chart.AppVersion }}
+  name: {{ Charts.Name }}
+spec:
+  gateway: kyma-system/kyma-gateway
+  hosts:
+    - {{ Charts.Name }}
+  rules:
+    - methods:
+        - GET
+        - POST
+        - PUT
+        - DELETE
+        - PATCH
+      noAuth: true
+      path: /*
+  service:
+    name: {{ Charts.Name }}
+    port: 80
