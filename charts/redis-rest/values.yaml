@@ -7,6 +7,6 @@ git:
   reference: main
 runtime: nodejs22
 mistralApiKey: ""
-git-basic:
+gitbasic:
   username: ""
   password: ""
