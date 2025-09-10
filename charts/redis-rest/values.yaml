@@ -6,7 +6,7 @@ resourceConfiguration:
 git:
   reference: main
 runtime: nodejs22
-mistralApiKey: ""
-gitbasic:
-  username: ""
-  password: ""
+# mistralApiKey: ""
+# gitbasic:
+#   username: ""
+#   password: ""
