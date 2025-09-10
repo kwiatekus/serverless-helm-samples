@@ -8,6 +8,8 @@ metadata:
         app.kubernetes.io/managed-by: Helm
         app.kubernetes.io/version: {{ .Chart.AppVersion }}
 spec:
+    annotations:
+        sidecar.istio.io/nativeSidecar: 'true'
     runtime: {{ .Values.runtime }}
     source:
         gitRepository:
