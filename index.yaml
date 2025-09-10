@@ -3,6 +3,16 @@ entries:
   redis-rest:
   - apiVersion: v2
     appVersion: 0.0.1
+    created: "2025-09-10T10:28:59.536023552Z"
+    description: A Helm chart for Kubernetes
+    digest: 1fca243f678e58252caabd2f75d992d15f7b46b94c55c71d3ccb2a0fe044c240
+    name: redis-rest
+    type: application
+    urls:
+    - https://github.com/kwiatekus/serverless-helm-samples/releases/download/redis-rest-0.1.8/redis-rest-0.1.8.tgz
+    version: 0.1.8
+  - apiVersion: v2
+    appVersion: 0.0.1
     created: "2025-09-10T10:21:26.46702136Z"
     description: A Helm chart for Kubernetes
     digest: cff20e1fdd7cacafccbb7fb3e156d9cea03126a524aafeab304d54c9c9a36b65
@@ -81,4 +91,4 @@ entries:
     urls:
     - https://github.com/kwiatekus/serverless-helm-samples/releases/download/redis-rest-0.1.0/redis-rest-0.1.0.tgz
     version: 0.1.0
-generated: "2025-09-10T10:21:26.467065172Z"
+generated: "2025-09-10T10:28:59.536063556Z"
